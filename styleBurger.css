@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-size: inherit;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main {
+	background-image: url('Background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.close {
+	position: relative;
+	top: 20px;
+	right: 30px;
+	background-image: url('Hamburger.svg');
+	width: 36px;
+	height: 21px;
+	cursor: pointer;
+}
+
+.two {
+	height: 100vh;
+}
+
+.menu {
+	width: 345px;
+	height: 100%;
+	background: #ffa501;
+	position: relative;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-in;
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu ul {
+	list-style: none;
+	color: #ffff;
+}
+
+.list::before {
+	display: inline-block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid #333;
+	margin-right: 10px;
+}
+
+.menu .topmenu {
+	padding: 10px 20px;
+}
+
+.menu .topmenu > li:not(:last-child) {
+	margin-bottom: 1em;
+}
