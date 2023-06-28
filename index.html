@@ -9,23 +9,103 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Portfolio</title>
 		<link rel="stylesheet" href="styleBurger.css" />
+		<link rel="stylesheet" href="styles/colors/colors.css" />
 	</head>
 	<body>
-		<main class="main">
-			<nav class="menu">
-				<button class="menu-burger__header">Open / Close</button>
+		<nav class="menu">
+			<div class="burger-top">
+				<button class="close-menu-burger"></button>
 				<ul class="topmenu">
-					<li class="list">ПРО МЕНЯ</li>
-					<li class="list">МОЙ ОПЫТ</li>
-					<li class="list">МОИ НАВЫКИ</li>
-					<li class="list">МОИ РАБОТЫ</li>
-					<li class="list">ПРАЙС-ЛИСТ</li>
-					<li class="list">КОНТАКТЫ</li>
+					<a href="" class="list">ПРО МЕНЯ</a>
+					<a href="" class="list">МОЙ ОПЫТ</a>
+					<a href="" class="list">МОИ НАВЫКИ</a>
+					<a href="" class="list">МОИ РАБОТЫ</a>
+					<a href="" class="list">ПРАЙС-ЛИСТ</a>
+					<a href="" class="list">КОНТАКТЫ</a>
 				</ul>
-			</nav>
-			<button src="Hamburger.svg" class="close" />
+			</div>
+			<div class="social-link">
+				<a href="https://github.com/" target="_blank" class="link-with-svg-github"></a>
+				<a href="https://www.instagram.com/" target="_blank" class="link-with-svg-instagram"></a>
+				<a href="https://www.facebook.com/" target="_blank" class="link-with-svg-facebook"></a>
+			</div>
+		</nav>
+		<main class="main">
+			<div class="social-link-vertical">
+				<p>Социальные сети</p>
+				<span class="line"></span>
+				<a href="https://github.com/" target="_blank" class="link-with-svg-github"></a>
+				<a href="https://www.instagram.com/" target="_blank" class="link-with-svg-instagram"></a>
+				<a href="https://www.facebook.com/" target="_blank" class="link-with-svg-facebook"></a>
+			</div>
+			<div class="container">
+				<h3 class="name">Меня зовут Александра Смит</h3>
+				<h1 class="me">
+					Я web-разработчик <br />
+					из города Москва
+				</h1>
+				<div class="buttons">
+					<a href="" class="btn">Портфолио</a>
+					<a href="" class="btn-for-me">Про меня</a>
+				</div>
+			</div>
+			<div class="open-btn">
+				<button class="open-menu-burger"></button>
+			</div>
 		</main>
-		<div class="two"></div>
+		<div class="education">
+			<div class="wrapper">
+				<div class="education-header">
+					<h3 class="experience">Опыт</h3>
+					<h1 class="utility">Чем я буду полезна</h1>
+					<span class="line-yollow"></span>
+				</div>
+				<div class="cards">
+					<div>
+						<p>Образование</p>
+						<div class="card">
+							<div>
+								<img src="assets//icons/University.svg" alt="" />
+								<h3>МГТУ им. Н. Э. Баумана</h3>
+								<p>Диплом магистра | Москва (2014-2020)</p>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmo.
+							</p>
+						</div>
+						<div class="card">
+							<div>
+								<img src="assets//icons/Courses.svg" alt="" />
+								<h3>Udemy</h3>
+								<p>Курсы по Web-разработке</p>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmo.
+							</p>
+						</div>
+					</div>
+					<div>
+						<p>Опыт работы</p>
+						<div class="card">
+							<div>
+								<img src="assets//icons/seo 1.svg" alt="" />
+								<h3>Front-End Developer</h3>
+								<p>EPAM | Москва (2018-2019)</p>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmo.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="main.js"></script>
 	</body>
 </html>

@@ -1,12 +1,14 @@
-let burger = document.querySelector('.menu-burger__header'),
-	menu = document.querySelector('.menu')
+const close = document.querySelector('.close-menu-burger')
+const open = document.querySelector('.open-menu-burger')
+const menu = document.querySelector('.menu')
+const main = document.querySelector('.main')
+const container = document.querySelector('.container')
 
-let close = document.querySelector('.close')
-
-burger.addEventListener('click', () => {
+const toggleBurgerMenu = () => {
 	menu.classList.toggle('active')
-})
+	main.classList.toggle('active')
+	container.classList.toggle('active')
+}
 
-close.addEventListener('click', () => {
-	menu.classList.toggle('active')
-})
+close.addEventListener('click', toggleBurgerMenu)
+open.addEventListener('click', toggleBurgerMenu)
