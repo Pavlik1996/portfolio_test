@@ -285,6 +285,19 @@ body {
 .experience {
 }
 
+.experience::before {
+	z-index: -1;
+	position: relative;
+	content: '';
+	top: 40px;
+	left: 10px;
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: var(--color-accent-500);
+}
+
 .utility {
 	margin-bottom: 25px;
 }
@@ -302,13 +315,24 @@ body {
 
 .card {
 	width: 425px;
+	margin-bottom: 45px;
 }
 
-.blabla {
+.card-header {
 	display: flex;
+	margin-bottom: 12px;
 }
 
-.blabla::before {
+.education-header,
+.work-experience {
+	color: #000;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-bottom: 45px;
+}
+
+.card-header::before {
 	z-index: -1;
 	position: relative;
 	left: 22px;
@@ -318,4 +342,8 @@ body {
 	height: 36px;
 	border-radius: 50%;
 	background: var(--color-accent-500);
+}
+
+.card-header-text {
+	margin-left: 20px;
 }
