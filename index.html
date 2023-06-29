@@ -156,15 +156,18 @@
 							<label class="input-box">
 								<span>Ваше имя</span>
 								<input type="text" class="contact-input-name" name="name" />
+								<div class="error-message"></div>
 							</label>
 							<label class="input-box">
 								<span>Ваша почта</span>
 								<input type="text" class="contact-input-name" name="email" />
+								<div class="error-message"></div>
 							</label>
 						</div>
 						<label class="textarea-box">
 							<span>Ваше сообщение</span>
 							<textarea class="contact-textarea" name="message"></textarea>
+							<div class="error-message"></div>
 						</label>
 						<div>
 							<button type="submit" class="button-submit">Отправить сообщение</button>
@@ -175,5 +178,6 @@
 		</div>
 		<script src="main.js"></script>
 		<script src="sendForm.js"></script>
+		<script src="validation.js"></script>
 	</body>
 </html>
