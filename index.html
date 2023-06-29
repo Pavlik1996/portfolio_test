@@ -66,18 +66,17 @@
 				<div class="cards">
 					<div>
 						<p class="education-header-info">Образование</p>
-						<div class="card">
+						<div class="card scrollable">
 							<div class="card-header">
 								<img src="assets//icons/University.svg" alt="" />
 								<div class="card-header-text">
 									<h3>МГТУ им. Н. Э. Баумана</h3>
-									<p>Диплом магистра | Москва (2014-2020)</p>
+									<p>Диплом магистра | Москва</p>
 								</div>
 							</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmo.
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
 							</p>
 						</div>
 						<div class="card">
@@ -90,8 +89,7 @@
 							</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmo.
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
 							</p>
 						</div>
 					</div>
@@ -102,27 +100,25 @@
 								<img src="assets//icons/seo 1.svg" alt="" />
 								<div class="card-header-text">
 									<h3>Front-End Developer</h3>
-									<p>EPAM | Москва (2018-2019)</p>
+									<p>EPAM | Москва</p>
 								</div>
 							</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmo.
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
 							</p>
 						</div>
-						<div class="card">
+						<div class="card scrollable">
 							<div class="card-header">
 								<img src="assets//icons/designer.svg" alt="" />
 								<div class="card-header-text">
 									<h3>UI/UX Designer</h3>
-									<p>Squad Team | Москва (2018)</p>
+									<p>Squad Team | Москва</p>
 								</div>
 							</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmo.
+								incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
 							</p>
 						</div>
 					</div>
@@ -131,8 +127,8 @@
 		</div>
 		<div class="contact scrollable" id="block3">
 			<div class="wrapper-contact">
-				<img src="assets/images/Photo.png" alt="photo" />
-				<div class="contact-block">
+				<img src="assets/images/Photo.png" alt="photo" class="myPhoto" />
+				<div class="contact-block scrollable">
 					<h3 contact-me>Контакты</h3>
 					<h2>Свяжись со мной</h2>
 					<span class="contact-line-yollow"></span>
@@ -155,28 +151,29 @@
 						></a>
 					</div>
 					<p>Или оставьте ваши данные и я сама вам напишу:</p>
-					<form action="">
-						<div>
-							<div>
-								<label class="input-box">
-									<span>Ваше имя</span>
-									<input type="text" class="contact-input-name" />
-								</label>
-								<label class="input-box">
-									<span>Ваша почта</span>
-									<input type="text" class="contact-input-name" />
-								</label>
-							</div>
-							<label class="textarea-box">
-								<span>Ваше сообщение</span>
-								<textarea name="" id="" cols="30" rows="10" class="contact-textarea"></textarea>
+					<form class="contact-conect" id="send-form">
+						<div class="input-name-email scrollable">
+							<label class="input-box">
+								<span>Ваше имя</span>
+								<input type="text" class="contact-input-name" name="name" />
+							</label>
+							<label class="input-box">
+								<span>Ваша почта</span>
+								<input type="text" class="contact-input-name" name="email" />
 							</label>
 						</div>
-						<button type="submit" class="btn button-submit">Отправить сообщение</button>
+						<label class="textarea-box">
+							<span>Ваше сообщение</span>
+							<textarea class="contact-textarea" name="message"></textarea>
+						</label>
+						<div>
+							<button type="submit" class="button-submit">Отправить сообщение</button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 		<script src="main.js"></script>
+		<script src="sendForm.js"></script>
 	</body>
 </html>
