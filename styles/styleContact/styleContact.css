@@ -1,0 +1,158 @@
+.wrapper-contact {
+	width: 1140px;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 1139px) {
+	.wrapper-contact {
+		flex-direction: column;
+	}
+}
+
+.wrapper-contact > img {
+	width: 400px;
+	height: 600px;
+}
+
+.contact {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-block {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 70px;
+}
+
+.contact-block > h3 {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 6px;
+	margin-left: 10px;
+}
+
+.contact-block > h3::before {
+	z-index: -1;
+	position: relative;
+	content: '';
+	top: 30px;
+	left: -15px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: var(--color-accent-500);
+}
+
+.contact-block > h2 {
+	/* margin-bottom: 24px; */
+	color: #000;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+.contact-block > p {
+	margin-bottom: 20px;
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.contact-link > a {
+	margin: 20px;
+}
+
+.contact-input-name {
+	width: 275px;
+	height: 45px;
+	margin-bottom: 30px;
+	margin-right: 25px;
+	border: 1px solid #000;
+}
+
+.contact-input-email {
+	width: 280px;
+	height: 45px;
+	margin-bottom: 30px;
+	border: 1px solid #000;
+}
+
+.contact-textarea {
+	border: 1px solid #000;
+	width: 585px;
+	height: 190px;
+	margin-bottom: 28px;
+}
+
+.button-submit {
+	width: 219px;
+	height: 45px;
+	font-weight: 700;
+}
+
+.input-box {
+	position: relative;
+}
+
+.input-box span {
+	position: absolute;
+	top: -18px;
+	left: 10px;
+	background-color: #fff;
+	padding: 0 5px;
+	font-size: 14px;
+}
+
+.textarea-box {
+	position: relative;
+}
+
+.textarea-box span {
+	position: absolute;
+	left: 10px;
+	top: -213px;
+	background-color: #fff;
+	padding: 0 5px;
+	font-size: 14px;
+}
+
+.contact-link-with-svg-facebook {
+	background: url('../../assets/icons/FacebookBig.svg') no-repeat center;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.contact-link-with-svg-telegram {
+	background: url('../../assets/icons/Telegram.svg') no-repeat center;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.contact-link-with-svg-instagram {
+	background: url('../../assets/icons/InstagramBig.svg') no-repeat center;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.contact-line-yollow {
+	height: 3px;
+	width: 60px;
+	background: var(--color-accent-500);
+	margin-bottom: 20px;
+}

@@ -1,0 +1,86 @@
+.education {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 1140px;
+}
+
+.wrapper > h3 {
+	color: #000;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
+.education-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.experience::before {
+	z-index: -1;
+	position: relative;
+	content: '';
+	top: 33px;
+	left: 8px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: var(--color-accent-500);
+}
+
+.utility {
+	margin-bottom: 25px;
+}
+
+.line-yollow {
+	height: 3px;
+	width: 60px;
+	background: var(--color-accent-500);
+	margin-bottom: 60px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: 425px;
+	margin-bottom: 45px;
+}
+
+.card-header {
+	display: flex;
+	margin-bottom: 12px;
+}
+
+.education-header-info,
+.work-experience {
+	color: #000;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-bottom: 45px;
+}
+
+.card-header::before {
+	z-index: -1;
+	position: relative;
+	left: 22px;
+	content: '';
+	display: block;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: var(--color-accent-500);
+}
+
+.card-header-text {
+	margin-left: 20px;
+}

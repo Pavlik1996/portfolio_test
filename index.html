@@ -8,12 +8,15 @@
 		/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="styleBurger.css" />
+		<link rel="stylesheet" href="styles/styleBurger/styleBurger.css" />
+		<link rel="stylesheet" href="styles/styleMain/styleMain.css" />
+		<link rel="stylesheet" href="styles/styleEducation/styleEducation.css" />
+		<link rel="stylesheet" href="styles/styleContact/styleContact.css" />
 		<link rel="stylesheet" href="styles/colors/colors.css" />
 	</head>
 	<body>
 		<nav class="menu">
-			<div class="burger-top">
+			<div>
 				<button class="close-menu-burger"></button>
 				<ul class="topmenu">
 					<a href="" class="list">ПРО МЕНЯ</a>
@@ -30,7 +33,7 @@
 				<a href="https://www.facebook.com/" target="_blank" class="link-with-svg-facebook"></a>
 			</div>
 		</nav>
-		<main class="main">
+		<main class="main scrollable" id="block1">
 			<div class="social-link-vertical">
 				<p>Социальные сети</p>
 				<span class="line"></span>
@@ -53,7 +56,7 @@
 				<button class="open-menu-burger"></button>
 			</div>
 		</main>
-		<div class="education">
+		<div class="education scrollable" id="block2">
 			<div class="wrapper">
 				<div class="education-header">
 					<h3 class="experience">Опыт</h3>
@@ -126,32 +129,50 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact">
+		<div class="contact scrollable" id="block3">
 			<div class="wrapper-contact">
 				<img src="assets/images/Photo.png" alt="photo" />
 				<div class="contact-block">
-					<h3>Контакты</h3>
+					<h3 contact-me>Контакты</h3>
 					<h2>Свяжись со мной</h2>
+					<span class="contact-line-yollow"></span>
 					<p>Любым удобным для вас способом:</p>
-					<div>
-						<a href="https://github.com/" target="_blank" class="link-with-svg-github"></a>
+					<div class="contact-link">
+						<a
+							href="https://www.facebook.com/"
+							target="_blank"
+							class="contact-link-with-svg-facebook"
+						></a>
+						<a
+							href="https://web.telegram.org/"
+							target="_blank"
+							class="contact-link-with-svg-telegram"
+						></a>
 						<a
 							href="https://www.instagram.com/"
 							target="_blank"
-							class="link-with-svg-instagram"
+							class="contact-link-with-svg-instagram"
 						></a>
-						<a href="https://www.facebook.com/" target="_blank" class="link-with-svg-facebook"></a>
 					</div>
 					<p>Или оставьте ваши данные и я сама вам напишу:</p>
 					<form action="">
 						<div>
 							<div>
-								<input type="text" />
-								<input type="text" />
+								<label class="input-box">
+									<span>Ваше имя</span>
+									<input type="text" class="contact-input-name" />
+								</label>
+								<label class="input-box">
+									<span>Ваша почта</span>
+									<input type="text" class="contact-input-name" />
+								</label>
 							</div>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
+							<label class="textarea-box">
+								<span>Ваше сообщение</span>
+								<textarea name="" id="" cols="30" rows="10" class="contact-textarea"></textarea>
+							</label>
 						</div>
-						<button>Отправить сообщение</button>
+						<button type="submit" class="btn button-submit">Отправить сообщение</button>
 					</form>
 				</div>
 			</div>

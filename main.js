@@ -12,3 +12,18 @@ const toggleBurgerMenu = () => {
 
 close.addEventListener('click', toggleBurgerMenu)
 open.addEventListener('click', toggleBurgerMenu)
+
+const blocks = document.querySelectorAll('.scrollable')
+let currentBlockIndex = 0
+
+window.addEventListener('wheel', event => {
+	const delta = Math.sign(event.deltaY)
+	currentBlockIndex += delta
+	if (currentBlockIndex < 0) {
+		currentBlockIndex = 0
+	} else if (currentBlockIndex >= blocks.length) {
+		currentBlockIndex = blocks.length - 1
+	}
+	blocks[currentBlockIndex].scrollIntoView({ behavior: 'smooth' })
+	event.preventDefault()
+})

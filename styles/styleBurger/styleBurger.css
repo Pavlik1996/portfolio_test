@@ -1,0 +1,92 @@
+.menu {
+	width: 345px;
+	height: 100vh;
+	background: var(--color-accent-500);
+	position: fixed;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-in;
+	color: #fff;
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 100;
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu ul {
+	list-style: none;
+	color: #ffff;
+}
+
+.close-menu-burger {
+	position: relative;
+	left: 85%;
+	top: 24px;
+	background-image: url('../../assets//icons/Close.svg');
+	width: 29px;
+	height: 29px;
+	cursor: pointer;
+	margin-bottom: 87px;
+}
+
+.menu .topmenu {
+	font-family: Poppins;
+	padding: 10px 20px;
+}
+
+.menu .topmenu > li:not(:last-child) {
+	margin-bottom: 1em;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.list::before {
+	display: inline-block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	margin-left: 20px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid #000;
+	margin-right: 10px;
+}
+
+.social-link {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 25px;
+}
+
+.link-with-svg-github {
+	background: url('../../assets/icons/Github.svg') no-repeat center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.link-with-svg-instagram {
+	background: url('../../assets/icons/Instagram.svg') no-repeat center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.link-with-svg-facebook {
+	background: url('../../assets/icons/Facebook.svg') no-repeat center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
