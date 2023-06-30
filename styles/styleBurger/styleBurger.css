@@ -1,4 +1,4 @@
-.menu {
+.menu-nav {
 	width: 345px;
 	height: 100vh;
 	background: var(--color-accent-500);
@@ -13,11 +13,11 @@
 	z-index: 100;
 }
 
-.menu.active {
+.menu-nav.active {
 	transform: translateX(0);
 }
 
-.menu ul {
+.menu-nav ul {
 	list-style: none;
 	color: #ffff;
 }
@@ -33,12 +33,12 @@
 	margin-bottom: 87px;
 }
 
-.menu .topmenu {
+.menu-nav .topmenu {
 	font-family: Poppins;
 	padding: 10px 20px;
 }
 
-.menu .topmenu > li:not(:last-child) {
+.menu-nav .topmenu > li:not(:last-child) {
 	margin-bottom: 1em;
 }
 

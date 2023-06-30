@@ -1,6 +1,6 @@
 const close = document.querySelector('.close-menu-burger')
 const open = document.querySelector('.open-menu-burger')
-const menu = document.querySelector('.menu')
+const menu = document.querySelector('.menu-nav')
 const main = document.querySelector('.main')
 const container = document.querySelector('.container')
 

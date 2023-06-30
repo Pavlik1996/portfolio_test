@@ -106,13 +106,6 @@
 	}
 }
 
-.contact-input-email {
-	width: 275px;
-	height: 45px;
-	margin-bottom: 30px;
-	border: 1px solid #000;
-}
-
 .input-name-email {
 	display: flex;
 }
@@ -161,7 +154,7 @@
 
 .input-box span {
 	position: absolute;
-	top: -18px;
+	top: -10px;
 	left: 10px;
 	background-color: #fff;
 	padding: 0 5px;
