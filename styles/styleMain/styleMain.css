@@ -9,7 +9,6 @@
 }
 
 body {
-	overflow: hidden;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 }
@@ -22,6 +21,7 @@ body {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	z-index: 2;
 }
 
@@ -39,19 +39,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	z-index: 4;
-}
-
-@media (max-width: 1280px) {
-	.social-link-vertical {
-		height: auto;
-		width: 100%;
-		position: absolute;
-		left: 45%;
-		bottom: 25%;
-		font-family: 'Poppins', sans-serif;
-		font-weight: 700;
-		z-index: 4;
-	}
 }
 
 .line {
@@ -182,4 +169,16 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: #000;
+}
+
+@media (max-width: 1280px) {
+	.social-link-vertical {
+		height: auto;
+		position: absolute;
+		left: 95%;
+		bottom: 25%;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+		z-index: 4;
+	}
 }

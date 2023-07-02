@@ -3,12 +3,6 @@
 	justify-content: center;
 }
 
-@media (max-width: 850px) {
-	.cards {
-		flex-direction: column;
-	}
-}
-
 .wrapper {
 	width: 1140px;
 }
@@ -56,22 +50,9 @@
 	margin-bottom: 40px;
 }
 
-@media (max-width: 850px) {
-	.cards {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 .card {
 	width: 425px;
 	margin-bottom: 45px;
-}
-
-@media (max-width: 850px) {
-	.card {
-		width: 350px;
-	}
 }
 
 .card-header {
@@ -88,13 +69,6 @@
 	margin-bottom: 45px;
 }
 
-@media (max-width: 850px) {
-	.education-header-info,
-	.work-experience {
-		text-align: center;
-	}
-}
-
 .card-header::before {
 	z-index: -1;
 	position: relative;
@@ -109,4 +83,21 @@
 
 .card-header-text {
 	margin-left: 20px;
+}
+
+@media (max-width: 850px) {
+	.cards {
+		flex-direction: column;
+	}
+	.education-header-info,
+	.work-experience {
+		text-align: center;
+	}
+	.card {
+		width: 350px;
+	}
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
 }

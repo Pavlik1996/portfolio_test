@@ -31,6 +31,12 @@
 	height: 29px;
 	cursor: pointer;
 	margin-bottom: 87px;
+	transition: 0.3s;
+}
+
+.close-menu-burger:hover {
+	transition: 0.3s;
+	transform: rotate(90deg);
 }
 
 .menu-nav .topmenu {
@@ -49,6 +55,12 @@
 	margin-bottom: 20px;
 	text-decoration: none;
 	color: #fff;
+	transition: 0.3s;
+}
+
+.list:hover {
+	color: #000;
+	transition: 0.3s;
 }
 
 .list::before {

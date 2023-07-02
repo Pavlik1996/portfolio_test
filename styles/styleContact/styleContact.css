@@ -5,23 +5,9 @@
 	margin-bottom: 45px;
 }
 
-@media (max-width: 1080px) {
-	.wrapper-contact {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 .myPhoto {
 	width: 400px;
 	height: 600px;
-}
-
-@media (max-width: 1080px) {
-	.myPhoto {
-		width: 300px;
-		height: 500px;
-	}
 }
 
 .contact {
@@ -36,16 +22,6 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 70px;
-}
-
-@media (max-width: 1080px) {
-	.contact-block {
-		width: auto;
-		height: auto;
-		align-items: center;
-		margin-left: 0;
-		justify-content: center;
-	}
 }
 
 .contact-block > h3 {
@@ -93,30 +69,17 @@
 }
 
 .contact-input-name {
-	width: 275px;
+	width: 250px;
 	height: 45px;
 	margin-bottom: 30px;
 	margin-right: 25px;
 	border: 1px solid #000;
-}
-
-@media (max-width: 850px) {
-	.contact-input-name {
-		margin-right: 0;
-	}
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .input-name-email {
 	display: flex;
-}
-
-@media (max-width: 850px) {
-	.input-name-email {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
 }
 
 .contact-textarea {
@@ -124,13 +87,6 @@
 	width: 585px;
 	height: 170px;
 	margin-bottom: 15px;
-}
-
-@media (max-width: 850px) {
-	.contact-textarea {
-		width: 275px;
-		height: 130px;
-	}
 }
 
 .button-submit {
@@ -161,13 +117,6 @@
 	font-size: 14px;
 }
 
-@media (max-width: 850px) {
-	.input-box span {
-		top: -10px;
-		padding: 0;
-	}
-}
-
 .textarea-box {
 	position: relative;
 }
@@ -179,12 +128,6 @@
 	background-color: #fff;
 	padding: 0 5px;
 	font-size: 14px;
-}
-
-@media (max-width: 850px) {
-	.textarea-box span {
-		top: -10px;
-	}
 }
 
 .contact-link-with-svg-facebook {
@@ -217,6 +160,21 @@
 	margin-bottom: 15px;
 }
 
+.error-message {
+	position: relative;
+	top: -20px;
+	color: red;
+	font-size: 12px;
+}
+
+.contact-textarea {
+	width: 558px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-right: 15px;
+	height: 150px;
+}
+
 @media (max-width: 850px) {
 	.contact-conect {
 		width: 100%;
@@ -225,11 +183,42 @@
 		justify-content: center;
 		flex-direction: column;
 	}
+	.contact-input-name {
+		margin-right: 0;
+	}
+	.input-name-email {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+	.contact-textarea {
+		width: 250px;
+		height: 130px;
+	}
+	.input-box span {
+		top: -10px;
+		padding: 0;
+	}
+	.textarea-box span {
+		top: -10px;
+	}
 }
 
-.error-message {
-	position: relative;
-	top: -20px;
-	color: red;
-	font-size: 12px;
+@media (max-width: 1080px) {
+	.wrapper-contact {
+		flex-direction: column;
+		align-items: center;
+	}
+	.myPhoto {
+		width: 300px;
+		height: 500px;
+	}
+	.contact-block {
+		width: auto;
+		height: auto;
+		align-items: center;
+		margin-left: 0;
+		justify-content: center;
+	}
 }
