@@ -1,4 +1,4 @@
-.menu-nav {
+.nav_menu {
 	width: 345px;
 	height: 100vh;
 	background: var(--color-accent-500);
@@ -13,16 +13,16 @@
 	z-index: 100;
 }
 
-.menu-nav.active {
+.nav_menu.active {
 	transform: translateX(0);
 }
 
-.menu-nav ul {
+.nav_menu ul {
 	list-style: none;
 	color: #ffff;
 }
 
-.close-menu-burger {
+.nav_menu_button_close-burger {
 	position: relative;
 	left: 85%;
 	top: 24px;
@@ -34,21 +34,21 @@
 	transition: 0.3s;
 }
 
-.close-menu-burger:hover {
+.nav_menu_button_close-burger:hover {
 	transition: 0.3s;
 	transform: rotate(90deg);
 }
 
-.menu-nav .topmenu {
+.nav_menu .body_nav_menu_ul_top-menu {
 	font-family: Poppins;
 	padding: 10px 20px;
 }
 
-.menu-nav .topmenu > li:not(:last-child) {
+.nav_menu .body_nav_menu_ul_top-menu > li:not(:last-child) {
 	margin-bottom: 1em;
 }
 
-.list {
+.nav_menu_ul_top-menu_list {
 	display: flex;
 	align-items: center;
 	gap: 20px;
@@ -58,12 +58,12 @@
 	transition: 0.3s;
 }
 
-.list:hover {
+.nav_menu_ul_top-menu_list:hover {
 	color: #000;
 	transition: 0.3s;
 }
 
-.list::before {
+.nav_menu_ul_top-menu_list::before {
 	display: inline-block;
 	content: '';
 	width: 10px;
@@ -75,28 +75,28 @@
 	margin-right: 10px;
 }
 
-.social-link {
+.nav_menu_social-link {
 	display: flex;
 	justify-content: center;
 	gap: 15px;
 	margin-bottom: 25px;
 }
 
-.link-with-svg-github {
+.nav_menu_social-link_link-with-svg-github {
 	background: url('../../assets/icons/Github.svg') no-repeat center;
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 }
 
-.link-with-svg-instagram {
+.nav_menu_social-link_link-with-svg-instagram {
 	background: url('../../assets/icons/Instagram.svg') no-repeat center;
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 }
 
-.link-with-svg-facebook {
+.nav_menu_social-link_link-with-svg-facebook {
 	background: url('../../assets/icons/Facebook.svg') no-repeat center;
 	display: inline-block;
 	width: 20px;

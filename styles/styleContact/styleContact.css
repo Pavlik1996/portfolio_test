@@ -1,11 +1,11 @@
-.wrapper-contact {
+.contact_wrapper {
 	width: 1140px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 45px;
 }
 
-.myPhoto {
+.contact_wrapper_my-photo {
 	width: 400px;
 	height: 600px;
 }
@@ -15,7 +15,7 @@
 	justify-content: center;
 }
 
-.contact-block {
+.contact_wrapper_block {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -24,7 +24,7 @@
 	margin-left: 70px;
 }
 
-.contact-block > h3 {
+.contact_wrapper_block > h3 {
 	color: #000;
 	font-size: 16px;
 	font-style: normal;
@@ -34,7 +34,7 @@
 	margin-left: 10px;
 }
 
-.contact-block > h3::before {
+.contact_wrapper_block > h3::before {
 	z-index: -1;
 	position: relative;
 	content: '';
@@ -47,7 +47,7 @@
 	background: var(--color-accent-500);
 }
 
-.contact-block > h2 {
+.contact_wrapper_block > h2 {
 	color: #000;
 	font-size: 36px;
 	font-style: normal;
@@ -55,7 +55,7 @@
 	line-height: 60px;
 }
 
-.contact-block > p {
+.contact_wrapper_block > p {
 	margin-bottom: 20px;
 	color: #000;
 	font-size: 14px;
@@ -68,7 +68,7 @@
 	margin-bottom: 20px;
 }
 
-.contact-input-name {
+.contact_wrapper_block_form_contact-connect_input-name-email_input-box_input-name {
 	width: 250px;
 	height: 45px;
 	margin-bottom: 30px;
@@ -78,18 +78,18 @@
 	padding-right: 15px;
 }
 
-.input-name-email {
+.contact_wrapper_block_form_contact-connect_input-name-email {
 	display: flex;
 }
 
-.contact-textarea {
+.contact_wrapper_block_form_contact-connect_textarea-box_message {
 	border: 1px solid #000;
 	width: 585px;
 	height: 170px;
 	margin-bottom: 15px;
 }
 
-.button-submit {
+.contact_wrapper_block_form_contact-connect_button-submit {
 	width: 275px;
 	height: 45px;
 	font-weight: 700;
@@ -104,11 +104,11 @@
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.input-box {
+.contact_wrapper_block_form_contact-connect_input-name-email_input-box {
 	position: relative;
 }
 
-.input-box span {
+.contact_wrapper_block_form_contact-connect_input-name-email_input-box span {
 	position: absolute;
 	top: -10px;
 	left: 10px;
@@ -117,11 +117,11 @@
 	font-size: 14px;
 }
 
-.textarea-box {
+.contact_wrapper_block_form_contact-connect_textarea-box {
 	position: relative;
 }
 
-.textarea-box span {
+.contact_wrapper_block_form_contact-connect_textarea-box span {
 	position: absolute;
 	left: 10px;
 	top: -180px;
@@ -130,7 +130,7 @@
 	font-size: 14px;
 }
 
-.contact-link-with-svg-facebook {
+.contact_wrapper_block_links_link-with-svg-facebook {
 	background: url('../../assets/icons/FacebookBig.svg') no-repeat center;
 	display: inline-block;
 	width: 30px;
@@ -138,7 +138,7 @@
 	margin-right: 25px;
 }
 
-.contact-link-with-svg-telegram {
+.contact_wrapper_block_link-with-svg-telegram {
 	background: url('../../assets/icons/Telegram.svg') no-repeat center;
 	display: inline-block;
 	width: 30px;
@@ -146,28 +146,28 @@
 	margin-right: 25px;
 }
 
-.contact-link-with-svg-instagram {
+.contact_wrapper_block_link-with-svg-instagram {
 	background: url('../../assets/icons/InstagramBig.svg') no-repeat center;
 	display: inline-block;
 	width: 30px;
 	height: 30px;
 }
 
-.contact-line-yollow {
+.contact_wrapper_block_line-yellow {
 	height: 3px;
 	width: 60px;
 	background: var(--color-accent-500);
 	margin-bottom: 15px;
 }
 
-.error-message {
+.contact_wrapper_block_form_contact-connect_input-name-email_input-box_error-message {
 	position: relative;
 	top: -20px;
 	color: red;
 	font-size: 12px;
 }
 
-.contact-textarea {
+.contact_wrapper_block_form_contact-connect_textarea-box_message {
 	width: 558px;
 	padding-left: 15px;
 	padding-top: 20px;
@@ -176,45 +176,45 @@
 }
 
 @media (max-width: 850px) {
-	.contact-conect {
+	.contact_wrapper_block_form_contact-connect {
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 	}
-	.contact-input-name {
+	.contact_wrapper_block_form_contact-connect_input-name-email_input-box_input-name {
 		margin-right: 0;
 	}
-	.input-name-email {
+	.contact_wrapper_block_form_contact-connect_input-name-email {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
 	}
-	.contact-textarea {
+	.contact_wrapper_block_form_contact-connect_textarea-box_message {
 		width: 250px;
 		height: 130px;
 	}
-	.input-box span {
+	.contact_wrapper_block_form_contact-connect_input-name-email_input-box span {
 		top: -10px;
 		padding: 0;
 	}
-	.textarea-box span {
+	.contact_wrapper_block_form_contact-connect_textarea-box span {
 		top: -10px;
 	}
 }
 
 @media (max-width: 1080px) {
-	.wrapper-contact {
+	.contact_wrapper {
 		flex-direction: column;
 		align-items: center;
 	}
-	.myPhoto {
+	.contact_wrapper_my-photo {
 		width: 300px;
 		height: 500px;
 	}
-	.contact-block {
+	.contact_wrapper_block {
 		width: auto;
 		height: auto;
 		align-items: center;

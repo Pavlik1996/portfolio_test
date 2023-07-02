@@ -1,8 +1,8 @@
-const close = document.querySelector('.close-menu-burger')
-const open = document.querySelector('.open-menu-burger')
-const menu = document.querySelector('.menu-nav')
+const close = document.querySelector('.nav_menu_button_close-burger')
+const open = document.querySelector('.main_open-menu-burger-button')
+const menu = document.querySelector('.nav_menu')
 const main = document.querySelector('.main')
-const container = document.querySelector('.container')
+const container = document.querySelector('.main_container')
 
 const toggleBurgerMenu = () => {
 	menu.classList.toggle('active')

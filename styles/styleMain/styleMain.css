@@ -25,7 +25,7 @@ body {
 	z-index: 2;
 }
 
-.social-link-vertical {
+.main_social-link-vertical {
 	width: 20px;
 	margin-right: 20px;
 	height: 100vh;
@@ -41,32 +41,33 @@ body {
 	z-index: 4;
 }
 
-.line {
+.main_line {
 	height: 2px;
 	width: 70px;
 	background: #000;
 }
 
-.social-link-vertical > a {
+.main_social-link-vertical > a {
 	transform: rotate(90deg);
 	margin: 10px;
 }
 
-.social-link-vertical > span {
+.main_social-link-vertical > span {
 	transform: rotate(90deg);
 	margin: 60px;
 }
 
-.social-link-vertical > p {
+.main_social-link-vertical > p {
 	color: #000;
 	font-size: 1rem;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 }
 
-.open-menu-burger {
+.main_open-menu-burger-button {
 	display: flex;
 	position: absolute;
+	justify-content: right;
 	top: 20px;
 	right: 20px;
 	background-image: url('../../assets/icons/Hamburger.svg');
@@ -76,7 +77,7 @@ body {
 	z-index: 3;
 }
 
-.container {
+.main_container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -84,7 +85,7 @@ body {
 	margin-left: 20px;
 }
 
-.container::after {
+.main_container::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -97,17 +98,13 @@ body {
 	z-index: 3;
 }
 
-.container.active::after {
+.main_container.active::after {
 	opacity: 0.8;
 	z-index: 4;
 }
 
-.open-btn {
-	display: flex;
-	justify-content: right;
-}
 
-.name {
+.main_container_name {
 	margin-left: 10px;
 	color: #000;
 	font-size: 16px;
@@ -115,7 +112,7 @@ body {
 	font-weight: 700;
 }
 
-.name::before {
+.main_container_name::before {
 	z-index: -1;
 	position: relative;
 	content: '';
@@ -128,7 +125,7 @@ body {
 	background: var(--color-accent-500);
 }
 
-.me {
+.main_container_me {
 	color: #000;
 	font-size: 48px;
 	line-height: 60px;
@@ -137,14 +134,14 @@ body {
 	font-weight: 700;
 }
 
-.buttons {
+.main_container_buttons {
 	gap: 20px;
 	display: flex;
 	margin-bottom: 20px;
 	z-index: 4;
 }
 
-.btn {
+.main_container_buttons_btn-portfolio {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -159,7 +156,7 @@ body {
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.btn-for-me {
+.main_container_buttons__btn-for-me {
 	cursor: pointer;
 	height: 45px;
 	display: flex;
@@ -172,7 +169,7 @@ body {
 }
 
 @media (max-width: 1280px) {
-	.social-link-vertical {
+	.main_social-link-vertical {
 		height: auto;
 		position: absolute;
 		left: 95%;

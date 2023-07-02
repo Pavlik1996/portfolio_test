@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		for (let fieldName in errors) {
 			let error = errors[fieldName]
 			let input = form.querySelector('[name="' + fieldName + '"]')
-			let errorBox = input.parentElement.querySelector('.error-message')
+			let errorBox = input.parentElement.querySelector('.contact_wrapper_block_form_contact-connect_input-name-email_input-box_error-message')
 
 			input.classList.add('error')
 
