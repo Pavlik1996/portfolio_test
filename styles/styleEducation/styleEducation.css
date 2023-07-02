@@ -8,7 +8,7 @@
 }
 
 .education_wrapper > h3 {
-	color: #000;
+	color: var(--color-black-100);
 	font-size: 16px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
@@ -62,7 +62,7 @@
 
 .education_wrapper_cards_header-info,
 .education_wrapper_cards_work-experience {
-	color: #000;
+	color: var(--color-black-100);
 	font-size: 20px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;

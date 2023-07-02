@@ -1,4 +1,13 @@
 :root {
 	/* accent */
 	--color-accent-500: #ffa501;
+
+	/*white*/
+	--color-white-100: #fff;
+
+	/*black*/
+	--color-black-100: #000;
+
+	/*red*/
+	--color-red-100: #ff0000;
 }
