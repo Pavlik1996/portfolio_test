@@ -46,8 +46,7 @@
 
 .education_wrapper_cards {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 40px;
+	justify-content: space-around;
 }
 
 .education_wrapper_cards_card {
@@ -85,7 +84,7 @@
 	margin-left: 20px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
 	.education_wrapper_cards {
 		flex-direction: column;
 	}
