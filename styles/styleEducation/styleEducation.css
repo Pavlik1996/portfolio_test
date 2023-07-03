@@ -1,6 +1,7 @@
 .education {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 45px;
 }
 
 .education_wrapper {
@@ -46,12 +47,17 @@
 
 .education_wrapper_cards {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .education_wrapper_cards_card {
 	width: 425px;
 	margin-bottom: 45px;
+}
+
+.education_wrapper_cards_experience,
+.education_wrapper_cards_work {
+	margin: 20px;
 }
 
 .education_wrapper_cards_card-header {
@@ -66,6 +72,7 @@
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	margin-bottom: 45px;
+	text-align: center;
 }
 
 .education_wrapper_cards_card-header::before {
@@ -84,7 +91,7 @@
 	margin-left: 20px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 947px) {
 	.education_wrapper_cards {
 		flex-direction: column;
 	}
